@@ -7,6 +7,7 @@ from apps.store import views
 router = routers.SimpleRouter()
 
 router.register(r'book', views.BookViewSet)
+router.register(r'book_relation', views.UserBookRelationViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
